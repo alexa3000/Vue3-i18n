@@ -7,7 +7,7 @@
     },
     "intro": {
         "titles": {
-            "main": "Welcome to Your Vue.js + TypeScript App",
+            "main": "Welcome to Your Vue.js + TypeScript App + i18n@next",
             "plugins": "Installed CLI Plugins",
             "links": "Essential Links",
             "ecosystem": "Ecosystem"
