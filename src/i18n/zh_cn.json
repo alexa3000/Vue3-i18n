@@ -7,7 +7,7 @@
     },
     "intro": {
         "titles": {
-            "main": "欢迎来到你的 Vue.js + TypeScript + i18n@next",
+            "main": "欢迎来到你的 Vue.js + TypeScript + i18n@next 应用程序",
             "plugins": "已安装的 CLI 插件",
             "links": "相关链结",
             "ecosystem": "生态系统"

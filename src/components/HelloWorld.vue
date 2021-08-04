@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>{{ $t("message.intro.titles.main") }}</h1>
     <p v-html="$t('message.intro.headline')"></p>
     <h3>{{ $t("message.intro.titles.plugins") }}</h3>
     <ul>
@@ -150,9 +150,6 @@ import { useI18n } from 'vue-i18n'
 
 export default defineComponent({
   name: 'HelloWorld',
-  props: {
-    msg: String
-  },
   setup () {
     const store = useStore()
     const { locale } = useI18n()
