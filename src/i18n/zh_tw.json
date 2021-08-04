@@ -7,7 +7,8 @@
     },
     "intro": {
         "titles": {
-            "main": "歡迎來到你的 Vue.js + TypeScript + i18n@next 應用程序",
+            "main": "歡迎來到你的 ",
+            "main2": " 應用程序",
             "plugins": "已安裝的 CLI 插件",
             "links": "相關連結",
             "ecosystem": "生態系統"

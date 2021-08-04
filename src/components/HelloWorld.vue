@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ $t("message.intro.titles.main") }}</h1>
+    <h1>{{ $t("message.intro.titles.main") }} {{ msg }} {{ $t("message.intro.titles.main2") }}</h1>
     <p v-html="$t('message.intro.headline')"></p>
     <h3>{{ $t("message.intro.titles.plugins") }}</h3>
     <ul>
@@ -150,11 +150,13 @@ import { useI18n } from 'vue-i18n'
 
 export default defineComponent({
   name: 'HelloWorld',
+  props: {
+    msg: String
+  },
   setup () {
     const store = useStore()
     const { locale } = useI18n()
     const activeIndex = ref('4')
-    console.log('vueURL:' + locale.value)
     const handleSelect = function (key: string, path: string) {
       console.log(key, path)
     }
@@ -175,20 +177,24 @@ export default defineComponent({
   },
   computed: {
     vueURL () {
-      var lang = useStore().getters.selectedLanguage
-      return lang === 'en_us' ? 'https://vuejs.org' : 'https://cn.vuejs.org'
+      return useStore().getters.selectedLanguage === 'en_us'
+        ? 'https://vuejs.org'
+        : 'https://cn.vuejs.org'
     },
     vueRouterURL () {
-      var lang = useStore().getters.selectedLanguage
-      return lang === 'en_us' ? 'https://router.vuejs.org' : 'https://router.vuejs.org/zh'
+      return useStore().getters.selectedLanguage === 'en_us'
+        ? 'https://router.vuejs.org'
+        : 'https://router.vuejs.org/zh'
     },
     vuexURL () {
-      var lang = useStore().getters.selectedLanguage
-      return lang === 'en_us' ? 'https://vuex.vuejs.org' : 'https://vuex.vuejs.org/zh'
+      return useStore().getters.selectedLanguage === 'en_us'
+        ? 'https://vuex.vuejs.org'
+        : 'https://vuex.vuejs.org/zh'
     },
     vueLoaderURL () {
-      var lang = useStore().getters.selectedLanguage
-      return lang === 'en_us' ? 'https://vue-loader.vuejs.org' : 'https://vue-loader.vuejs.org/zh'
+      return useStore().getters.selectedLanguage === 'en_us'
+        ? 'https://vue-loader.vuejs.org'
+        : 'https://vue-loader.vuejs.org/zh'
     }
   }
 })
