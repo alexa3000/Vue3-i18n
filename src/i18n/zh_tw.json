@@ -1,0 +1,31 @@
+{
+    "index": {
+        "title": "這是首頁"
+    },
+    "about": {
+        "title": "這是關於頁"
+    },
+    "intro": {
+        "titles": {
+            "main": "歡迎來到你的 Vue.js + TypeScript",
+            "plugins": "已安裝的 CLI 插件",
+            "links": "相關連結",
+            "ecosystem": "生態系統"
+        },
+        "headline": "更多有關客製化你的專案的資訊<br />請上 <a href=\"https://cli.vuejs.org/zh\" target=\"_blank\" rel=\"noopener\">觀看 Vue-cli 指南</a>.",
+        "essentialLinks": {
+            "Core Docs": "核心文件",
+            "Forum": "論壇",
+            "Community Chat": "社群討論",
+            "Twitter": "推特",
+            "News": "最新消息"
+        },
+        "ecosystemLinks": {
+            "vue-router": "vue-router(路由管理)",
+            "vuex": "vuex(狀態管理)",
+            "vue-devtools": "vue-devtools(除錯工具)",
+            "vue-loader": "vue-loader(載入器)",
+            "awesome-vue": "awesome-vue(精彩實作)"
+        }
+    }
+}
